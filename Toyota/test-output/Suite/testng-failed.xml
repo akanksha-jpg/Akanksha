@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.toyota.Utilitynavigations">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="utilitynavigation"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.toyota.Utilitynavigations -->
+      <class name="com.toyota.GlobalNavigation">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="teardown"/>
+          <include name="navigation"/>
+        </methods>
+      </class> <!-- com.toyota.GlobalNavigation -->
+      <class name="com.toyota.Utility">
+        <methods>
+          <include name="takeSnapShot"/>
+        </methods>
+      </class> <!-- com.toyota.Utility -->
+      <class name="com.toyota.Search">
+        <methods>
+          <include name="search"/>
+          <include name="openBrowser"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.toyota.Search -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
