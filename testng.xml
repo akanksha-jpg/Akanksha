@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.toyota.Utility"/>
+      <class name="com.toyota.Selectvehicle"/>
+      <class name="com.toyota.Base"/>
+      <class name="com.toyota.GlobalNavigation"/>
+      <class name="com.toyota.Utilitynavigations"/>
+      <class name="com.toyota.Search"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
