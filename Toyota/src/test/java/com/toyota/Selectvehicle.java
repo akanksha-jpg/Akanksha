@@ -1,6 +1,7 @@
 package com.toyota;
 
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -14,8 +15,7 @@ public class Selectvehicle extends Base {
 		Thread.sleep(10000);
 	
 		driver.findElement(By.xpath("//button[contains(text(),'Cars & Minivan')]")).click();  
-	
-		Utility.takeSnapShot(driver, "Cars  & Minivan");
+			Utility.takeSnapShot(driver, "Cars  & Minivan");
 		Thread.sleep(10000);
 		
 		

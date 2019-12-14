@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -49,7 +50,7 @@ public class Base
 				logger.log(Status.PASS,"Navigate succesfully");
 				extent.flush();
 
-				ExtentTest logger1 =  extent.createTest("Search");
+			ExtentTest logger1 =  extent.createTest("Search");
 				logger1.log(Status.PASS,"search opens ");
 				extent.flush();
 

@@ -2,9 +2,12 @@ package com.toyota;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
-
+import java.awt.Robot;
+import java.awt.event.InputEvent;
+import java.awt.event.KeyEvent;	
 import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -22,6 +25,8 @@ public class GlobalNavigation extends Base {
 		Utility.takeSnapShot(driver, "Shopping Tools");
 		Thread.sleep(10000);
 		
+		
+		
 		driver.findElement(By.xpath("//div[@class='main-navigation-bar']//li[4]//a[1]")).click();  
 		Utility.takeSnapShot(driver, "dealers ");
 		Thread.sleep(10000);
@@ -33,12 +38,8 @@ public class GlobalNavigation extends Base {
 		driver.findElement(By.xpath("//div[@class='main-navigation-bar']//li[6]//a[1]")).click();  
 		Utility.takeSnapShot(driver, "Local Special");
 		Thread.sleep(4000);
+	
 		
-	     WebElement zipcode=driver.findElement(By.name("zipcode"));
-		zipcode.sendKeys("12345");
-		  Utility.takeSnapShot(driver, "Zipcode");
-		  WebElement submit = driver.findElement(By.xpath("//button[@name='button']"));
-		  submit.click();
 		 
 		
   }
